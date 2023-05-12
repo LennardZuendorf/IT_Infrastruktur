@@ -1,0 +1,14 @@
+{
+  "name": "showgetter",
+  "version": "1.0.0",
+  "description": "getting shows from availability API",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
+}
