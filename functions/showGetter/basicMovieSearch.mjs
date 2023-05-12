@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import querystring from 'querystring';
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
     const params = {
         country: 'us',
         services: 'netflix,prime.buy,hulu.addon.hbo,peacock.free',
@@ -12,6 +12,7 @@ exports.handler = async (event) => {
         keyword: 'zombie'
     };
 
+    // TODO: Replace API Keys!!!
     const options = {
         method: 'GET',
         headers: {

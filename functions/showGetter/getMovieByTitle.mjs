@@ -10,6 +10,7 @@ export const handler = async(event) => {
         output_language: 'en'
     };
 
+    // TODO: Replace API Keys!!!
     const options = {
         method: 'GET',
         headers: {
