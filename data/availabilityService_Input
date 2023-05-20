@@ -3,4 +3,5 @@
 //QueryParameters
 {
   "country":"de",
+  "services":{"netflix", "amazon"}
 }
