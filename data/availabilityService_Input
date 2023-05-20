@@ -1,0 +1,6 @@
+//PathVariable: {Batman}
+
+//QueryParameters
+{
+  "country":"de",
+}
