@@ -1,13 +1,11 @@
+//data structure for DynamoDB "tracking", therefore slightly different structure
+
 {
+  "id": "tgs6sda"
   "Title": "Batman",
   "Type": "movie",
   "Year": "1989",
-    "watchers": {
-      "user-id": [
-        {
-          "mail": "l.p.zuendorf@gmail.com",
-          "service": "netflix",
-        }
-      ]
-    }
+    "watchers": [
+      ["hdsa6s","l.p.zuendorf@gmail.com","netflix"]
+    ]
 }
