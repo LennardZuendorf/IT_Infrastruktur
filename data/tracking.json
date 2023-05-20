@@ -5,11 +5,8 @@
   "Title": "Batman",
   "Type": "movie",
   "Year": "1989",
-   "watchers": [
-    "hdsa6s":[
-      "email": "l.p.zuendorf@gmail.com",
-      "country": "de",
-      "service: "netflix"
-    ]
-  ]
+   "user-id":"hdsa6s",
+   "email": "l.p.zuendorf@gmail.com",
+   "country": "de",
+   "service: "netflix"
 }
