@@ -2,7 +2,10 @@
   "Title": "Batman",
   "Type": "movie",
   "Year": "1989",
-  "user-id": 
-  "mail": "l.p.zuendorf@gmail.com",
-  "services": ["netflix"]
+  "watcher":
+  [
+    "user-id":"hdsa6s", 
+    "mail": "l.p.zuendorf@gmail.com", 
+    "service": "netflix"
+    ]
 }
