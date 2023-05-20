@@ -1,67 +1,14 @@
 {
+  "id":"123123NDA"
   "Title": "Batman",
   "Description": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker.",
   "Type": "movie",
   "Year": "1989",
-  "streamingInfo": {
-    "us": {
-      "netflix": [
-        {
-          "type": "subscription",
-          "link": "http://www.netflix.com/Movie/Batman/60010514?trkid=189530",
-          "watchlink": "http://www.netflix.com/Movie/Batman/60010514?trkid=189530"
-
-        }
-      ]
-    },
-    "imdbRating": 65,
-    "imdbVoteCount": 1000,
-    "tmbId": 12312,
-    "tmdRating": 70,
-    "genres":[
-      {
-        "id": 17,
-        "name": "Drama"
-      },
-      {
-        "id": 17,
-        "name": "History"
-      }
-    ],
-    "originalLanguage": "en",
-    "countries": [
-      {
-        "0": "IT"
-      },
-      {
-        "1": "US"
-      },
-      {
-        "2": "UK"
-      }
-    ],
-    "cast": [
-        {
-            "0": "Sabina Fedeli"
-        },
-        {
-            "1": "Anna Migotto"
-        }
-    ],
-    "directors": [
-      {
-        "0": "Sabina Fedeli"
-      },
-      {
-        "1": "Anna Migotto"
-      }
-    ],
-    "runTime": 90,
-    "youtubeTrailerVideoLink": "http://www.youtube.com/watch?v=2GtOpYtDg3g",
-    "posterURLs": {
-      "92": "https://image.tmdb.org/t/p/w92/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg",
-      "123": "https://image.tmdb.org/t/p/w123/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg"
-    }
-
-  }
+  "streamingInfo": [
+    "us": {"netflix"},
+    "de": {"amazon", "appletv"}
+   ],
+   "originalLanguage": "en",
+   "youtubeTrailerVideoLink": "http://www.youtube.com/watch?v=2GtOpYtDg3g",
+   "posterURL": "https://image.tmdb.org/t/p/w123/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg"
 }
