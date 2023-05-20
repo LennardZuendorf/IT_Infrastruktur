@@ -1,0 +1,13 @@
+{
+  "id":"123123NDA"
+  "Title": "Batman",
+  "Description": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker.",
+  "Type": "movie",
+  "Year": "1989",
+  "streamingInfo": [
+    "us": {"netflix"},
+   ],
+   "originalLanguage": "en",
+   "youtubeTrailerVideoLink": "http://www.youtube.com/watch?v=2GtOpYtDg3g",
+   "posterURL": "https://image.tmdb.org/t/p/w123/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg"
+}
