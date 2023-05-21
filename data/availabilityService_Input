@@ -1,7 +1,7 @@
 //PathVariable: {Batman}
 
-//QueryParameters
+//QueryStringParameters
 {
   "country":"de",
-  "services":{"netflix", "amazon"}
+  "type":"movie"
 }
