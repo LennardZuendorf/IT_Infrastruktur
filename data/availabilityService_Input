@@ -4,4 +4,5 @@
 {
   "country":"de",
   "type":"movie"
+  "provider": "prime"
 }
