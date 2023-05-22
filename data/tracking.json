@@ -1,12 +1,12 @@
 //data structure for DynamoDB "tracking", therefore slightly different structure
 
 {
-  "id": "tgs6sda"
+  "id": "db152b1f-8454-40c7-8d4d-1bbf6dd0b6b6"
   "Title": "Batman",
   "Type": "movie",
   "Year": "1989",
-   "user-id":"hdsa6s",
-   "email": "l.p.zuendorf@gmail.com",
-   "country": "de",
-   "service: "netflix"
+  "user-id":"d17c0612-6847-44c6-b74b-21ddc2282a09",
+  "email": "l.p.zuendorf@gmail.com",
+  "country": "de",
+  "provider: "netflix"
 }
