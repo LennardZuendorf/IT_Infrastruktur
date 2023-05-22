@@ -1,13 +1,13 @@
 {
-  "id":"123123NDA"
-  "title": "Batman",
-  "description": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker.",
-  "type": "movie",
-  "year": "1989",
-  "country": "us",
-  "services": {"amazon", "appletv"},
-  "originalLanguage": "en",
-  "youtubeTrailerVideoLink": "http://www.youtube.com/watch?v=2GtOpYtDg3g",
-  "posterURL": "https://image.tmdb.org/t/p/w123/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg"
-},
-...
+  "id": "46674eef-f69e-49c7-a50e-24ef737cf1e4"
+  "country": "de"
+  "description": "Batman and Robin deal with relationship issues while preventing Mr. Freeze and Poison Ivy from attacking Gotham City."
+  "originalLanguage": "en"
+  "posterURL": "https://image.tmdb.org/t/p/original/cGRDufDDSrFrv7VI4YnmWnslne0.jpg"
+  "provider": ["prime"]
+  "title": "Batman & Robin"
+  "ttl": "1684782255"
+  "type": "movie"
+  "year": "1997"
+  "youtubeTrailerVideoLink": "https://www.youtube.com/watch?v=NljCBJSnLLk"
+}
