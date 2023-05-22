@@ -1,7 +1,6 @@
 //PUT
 //requestBody
 {
-  "id":"d17c0612-6847-44c6-b74b-21ddc2282a09",
   "title": "Batman",
   "type": "movie",
   "year": "1989",
