@@ -1,4 +1,5 @@
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+
 import {
   DynamoDBDocumentClient,
   ScanCommand,
@@ -9,7 +10,7 @@ import {
 
 const client = new DynamoDBClient({});
 const dynamo = DynamoDBDocumentClient.from(client);
-const tableName = "tracking";
+const tableName = "trackings";
 const crypto = await import('node:crypto');
 
 export const handler = async (event, context) => {
@@ -21,7 +22,7 @@ export const handler = async (event, context) => {
 
   try {
     switch (event.routeKey) {
-      case "DELETE /{id}":
+      case "DELETE /trackings/{id}":
         await dynamo.send(
           new DeleteCommand({
             TableName: tableName,
@@ -32,7 +33,7 @@ export const handler = async (event, context) => {
         );
         body = `Deleted item ${event.pathParameters.id}`;
         break;
-      case "GET /{id}":
+      case "GET /trackings/users/{userId}":
         body = await dynamo.send(
             new ScanCommand({
                 TableName: tableName,
@@ -41,13 +42,13 @@ export const handler = async (event, context) => {
                     "#userId": "userId", 
                 },
                 ExpressionAttributeValues: {
-                    ":userId": event.pathParameters.id,
+                    ":userId": event.pathParameters.userId,
                 },
             })
         );
         body = body.Items;
         break;
-      case "PUT /":
+      case "PUT /trackings":
         let requestJSON = JSON.parse(event.body);
         await dynamo.send(
           new PutCommand({
