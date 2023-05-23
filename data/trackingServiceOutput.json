@@ -2,20 +2,18 @@
 
 [
   {
-    "id";"d17c0612-6847-44c6-b74b-21ddc2282a09",
+    "id":"d17c0612-6847-44c6-b74b-21ddc2282a09",
     "service":"netflix",
     "userId":"d17c0612-6847-44c6-b74b-21ddc2282a09",
-    "id":"sadsad3",
     "email":"l.p.zuendorf@gmail.com",
     "country":"de",
     "title":"harry potter",
     "type":"movie"
   },
    {
-    "id";"d17c0612-6847-44c6-b74b-21ddc2282a09",
+    "id":"d17c0612-6847-44c6-b74b-21ddc2282a09",
     "service":"netflix",
     "userId":"d17c0612-6847-44c6-b74b-21ddc2282a09",
-    "id":"sadsad3",
     "email":"l.p.zuendorf@gmail.com",
     "country":"de",
     "title":"harry potter",
