@@ -1,8 +1,8 @@
-//PathVariable: {Batman}
+//PathVariable
+{Batman}
 
 //QueryStringParameters
 {
   "country":"de",
   "type":"movie"
-  "provider": "prime"
 }
