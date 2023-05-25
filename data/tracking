@@ -2,10 +2,9 @@
 
 {
   "id": "db152b1f-8454-40c7-8d4d-1bbf6dd0b6b6"
-  "Title": "Batman",
-  "Type": "movie",
-  "ttl":"6583930371"
-  "user-id":"d17c0612-6847-44c6-b74b-21ddc2282a09",
+  "title": "Batman",
+  "type": "movie",
+  "userId":"d17c0612-6847-44c6-b74b-21ddc2282a09",
   "email": "l.p.zuendorf@gmail.com",
   "country": "de",
   "provider: ["netflix"]
