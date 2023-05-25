@@ -3,7 +3,7 @@
 [
   {
     "id":"d17c0612-6847-44c6-b74b-21ddc2282a09",
-    "service":"netflix",
+    "provider":["netflix"]
     "userId":"d17c0612-6847-44c6-b74b-21ddc2282a09",
     "email":"l.p.zuendorf@gmail.com",
     "country":"de",
@@ -12,7 +12,7 @@
   },
    {
     "id":"d17c0612-6847-44c6-b74b-21ddc2282a09",
-    "service":"netflix",
+    "provider":["netflix","prime"]
     "userId":"d17c0612-6847-44c6-b74b-21ddc2282a09",
     "email":"l.p.zuendorf@gmail.com",
     "country":"de",
