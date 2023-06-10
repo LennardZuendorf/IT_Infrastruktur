@@ -40,7 +40,7 @@ export const handler = async (event) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'ba37aada6fmsh74705671be70232p16e3a9jsn29672966acc3',
+            'X-RapidAPI-Key': '',
             'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
         }
     };
