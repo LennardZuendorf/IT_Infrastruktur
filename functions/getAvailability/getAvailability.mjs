@@ -11,14 +11,23 @@ import {
     DeleteCommand,
 } from "@aws-sdk/lib-dynamodb";
 
+import {
+SecretsManagerClient,
+GetSecretValueCommand,
+} from "@aws-sdk/client-secrets-manager";
+
 const client = new DynamoDBClient({});
 const dynamo = DynamoDBDocumentClient.from(client);
 const tableName = "trackings";
 const crypto = await import('node:crypto');
-
+const secret_name = "rapidAPI";
+const SecretClient = new SecretsManagerClient({
+    region: "eu-west-1",
+    
+});
 
 export const handler = async (event) => {
-
+    let SecretResponse;
     let body;
     let statusCode = 200;
     const headers = {
@@ -26,6 +35,21 @@ export const handler = async (event) => {
 
     };
 
+    try {
+      SecretResponse = await SecretClient.send(
+        new GetSecretValueCommand({
+          SecretId: secret_name,
+          VersionStage: "AWSCURRENT", // VersionStage defaults to AWSCURRENT if unspecified
+        })
+      );
+    } catch (error) {
+      // For a list of exceptions thrown, see
+      // https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html
+      throw error;
+    }
+    
+    let secret =  SecretResponse.SecretString;
+    secret = JSON.parse(secret)
 
     const params = {
         title: event.title,
@@ -34,22 +58,16 @@ export const handler = async (event) => {
         output_language: 'en'
     };
 
-
-
-
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '',
-            'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
+            'X-RapidAPI-Key': secret.rapidKey,
+            'X-RapidAPI-Host': secret.rapidHost
         }
     };
 
-
-
     const country = event.country;
-
-
+    
     try {
         const queryString = querystring.stringify(params);
         const response = await fetch(`https://streaming-availability.p.rapidapi.com/v2/search/title?${queryString}`, options);
@@ -70,14 +88,14 @@ export const handler = async (event) => {
                     const streamingInfoKeys = Object.keys(streamingInfo);
                     return { title, overview, type, year, country, provider: streamingInfoKeys, originalLanguage, youtubeTrailerVideoLink, posterURLs };
                 }
-
+                
                 return null;
 
             })
             .filter(item => item !== null);
 
         let body = [];
-
+        
 
 
         const itemsToSave = extractedItems.slice(0, 20);
@@ -106,8 +124,8 @@ export const handler = async (event) => {
             });
             await dynamo.send(putCommand);
         }
-
-
+        
+    
 
 
 
